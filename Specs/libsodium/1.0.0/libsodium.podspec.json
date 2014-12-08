@@ -20,5 +20,5 @@
     ],
     "requires_arc": false,
     "header_mappings_dir": "src/libsodium/include",
-    "compiler_flags": "-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MLOCK -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS"
+    "compiler_flags": "-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS"
 }

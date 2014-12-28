@@ -13,7 +13,7 @@
   "source": {
     "http": "https://github.com/jedisct1/libsodium/releases/download/1.0.0/libsodium-1.0.0.tar.gz"
   },
-  "prepare_command": "./dist-build/ios.sh",
+  "prepare_command": "bash ./dist-build/ios.sh",
   "source_files": "src/libsodium/**/*.{c,h,data}",
   "requires_arc": false,
   "header_mappings_dir": "src/libsodium/include",

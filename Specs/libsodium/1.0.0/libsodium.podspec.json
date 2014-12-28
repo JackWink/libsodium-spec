@@ -11,9 +11,9 @@
   },
   "summary": "Sodium is a portable, cross-compilable, installable, packageable, API-compatible version of NaCl.",
   "source": {
-    "http": "https://github.com/jedisct1/libsodium/releases/download/1.0.0/libsodium-1.0.0.tar.gz"
+    "git": "https://github.com/jedisct1/libsodium.git"
   },
-  "prepare_command": "bash ./dist-build/ios.sh",
+  "prepare_command": "bash ./autogen.sh && ./dist-build/ios.sh",
   "source_files": "src/libsodium/**/*.{c,h,data}",
   "requires_arc": false,
   "header_mappings_dir": "src/libsodium/include",

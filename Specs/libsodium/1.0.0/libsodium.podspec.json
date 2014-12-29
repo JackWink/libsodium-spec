@@ -14,8 +14,8 @@
     "git": "https://github.com/jedisct1/libsodium.git"
   },
   "prepare_command": "./autogen.sh && ./dist-build/ios.sh",
-  "source_files": "src/libsodium/**/*.{c,h,data}",
+  "source_files": "libsodium-ios/**/*.h",
   "requires_arc": false,
-  "header_mappings_dir": "src/libsodium/include",
-  "compiler_flags": "-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS"
+  "header_mappings_dir": "libsodium-ios/include",
+  "library": "libsodium-ios/libsodium"
 }

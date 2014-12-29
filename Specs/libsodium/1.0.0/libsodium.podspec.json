@@ -17,5 +17,5 @@
   "source_files": "libsodium-ios/**/*.h",
   "requires_arc": false,
   "header_mappings_dir": "libsodium-ios/include",
-  "library": "libsodium-ios/libsodium"
+  "library": "libsodium-ios/libsodium.a"
 }

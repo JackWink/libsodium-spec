@@ -15,14 +15,19 @@
   },
   "requires_arc": false,
   "prepare_command": "./autogen.sh && ./dist-build/ios.sh",
+  "header_mappings_dir": "libsodium-ios/include",
   "subspecs": [
     {
         "name": "Release",
         "source_files": "libsodium-ios/**/*.h",
-        "header_mappings_dir": "libsodium-ios/include",
         "vendored_libraries": "libsodium-ios/*.a",
         "libraries": ["sodium"],
         "preserve_paths": ["libsodium-ios/*"]
-    }    
+    },
+    {
+        "name": "Debug",
+        "source_files": "src/libsodium/**/*.{c,h,data}",
+        "compiler_flags": "-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS"
+    }
   ]
 }

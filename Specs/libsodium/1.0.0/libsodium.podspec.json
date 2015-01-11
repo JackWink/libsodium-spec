@@ -22,7 +22,7 @@
         "header_mappings_dir": "libsodium-ios/include",
         "vendored_libraries": "libsodium-ios/*.a",
         "libraries": ["sodium"],
-        "preserve_paths": ["libsodium-ios/*"],
+        "preserve_paths": ["libsodium-ios/*"]
     }    
   ]
 }

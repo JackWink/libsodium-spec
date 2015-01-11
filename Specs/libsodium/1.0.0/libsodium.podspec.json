@@ -14,10 +14,10 @@
     "git": "https://github.com/jedisct1/libsodium.git"
   },
   "requires_arc": false,
+  "prepare_command": "./autogen.sh && ./dist-build/ios.sh",
   "subspecs": [
     {
         "name": "Release",
-        "prepare_command": "./autogen.sh && ./dist-build/ios.sh",
         "source_files": "libsodium-ios/**/*.h",
         "header_mappings_dir": "libsodium-ios/include",
         "vendored_libraries": "libsodium-ios/*.a",

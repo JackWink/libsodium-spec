@@ -20,7 +20,7 @@
     {
         "name": "Release",
         "source_files": "libsodium-ios/**/*.h",
-        "vendored_libraries": "libsodium-ios/*.a",
+        "vendored_libraries": "libsodium-ios/lib/libsodium.a",
         "libraries": ["sodium"],
         "preserve_paths": ["libsodium-ios/*"]
     },
